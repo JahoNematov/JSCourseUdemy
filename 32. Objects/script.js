@@ -7,7 +7,12 @@ const options = {
     colors: {
         border: 'black',
         bg: 'red'
+    },
+    makeTest: function() {
+        console.log("Test from the object's method.");
     }
+
+
 }
 console.log(options.name);
 
@@ -35,10 +40,16 @@ for (let key in options) {
 }
 
 
-
-
 // Methods of Objects
 console.log();
 console.log(Object.keys(options));
 console.log(Object.keys(options).length);
 
+options.makeTest();
+
+
+// Destructurisation of Objects
+
+const {border, bg} = options.colors;
+console.log(border);
+console.log(bg);
