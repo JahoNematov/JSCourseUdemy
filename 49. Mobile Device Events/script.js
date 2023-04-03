@@ -34,3 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // Three main attributes of touch events
 // touches -> number of fingers involved in event + their params
 // targetTouches -> number of fingers that touch exactly this element
+// changedTouches -> list of fingers that involve during this event
+//                   For example if you put 3 fingers but leave 
+//                   only one finger starting "touchend" event
+//                   event.changedTouches will return only removed one
